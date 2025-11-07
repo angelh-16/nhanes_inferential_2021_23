@@ -24,17 +24,22 @@ NHANES variables for analysis:
 **1. "Is there an association between marital status (married or not married) and education level (bachelor’s degree or higher vs. less than a bachelor’s degree)?"
      - Variables: `DMDMARTZ` (marital status) and `DMDEDUC2` (education level). Recode as specified.**
        \
-   There is an association between marital status and education level (p < 0.05).
+   There is an association between marital status and education level. 
+   The table shows that a higher proportion of married individuals have a bachelor’s degree or higher compared to those not married. Out of a total of 7,772 people, among the not married individuals, 27.2% have a bachelor’s degree or higher while those married, 39.5% have a bachelor’s degree or higher.
+   After conducting a chi-square test, χ² was found to be 129.174, degrees of freedom was 1, and p-value was 6.213 × 10⁻³⁰. With p < 0.001, the association between marital status and education level is statistically significant.
 
 **2. "Is there a difference in the mean sedentary behavior time between those who are married and those who are not married?"  
      - Variables: `DMDMARTZ` (marital status, recoded) and `PAD680` (sedentary behavior time, cleaned).**
        \
-There is a difference in the mean sedentary behavior time between those who are married and those who are not married (p < 0.05).
-
+     There is a difference in the mean sedentary behavior time between those who are married and those who are not married.
+     The table showed a total of 7,709 individuals that on average, not married individuals (3,603) spend more time in sedentary behavior with 3721.96 minutes than married individuals(4,106) with 353.29 minutes.
+     After conducting the t test, it was found that t = 3.851 and p = 0.0001184. There is statistically significant difference in the mean sedentary behavior time between those who are married and those who are not married since p < 0.05.
+     
 **3. "How do age and marital status affect systolic blood pressure?"  
      - Variables: `RIDAGEYR` (age), `DMDMARTZ` (marital status, recoded), and `BPXOSY3` (systolic blood pressure).**
        \
-Result is statistically significant(p < 0.05).
+     Both age and marital status significantly affect systolic blood pressure, with age having a larger impact.
+     The Regression Results 
 
 **4. "Is there a correlation between self-reported weight and minutes of sedentary behavior?"  
      - Variables: `WHD020` (self-reported weight, cleaned) and `PAD680` (sedentary behavior time, cleaned).**
@@ -45,5 +50,9 @@ Correlation strength: weak
 **5. "Is there an association between education level and being overweight?"
      - Variables: DMDEDUC2  (education level) and WHD020 (self-reported weight, cleaned).**
        \
-Result: There is no association between education level and overweight status (p ≥ 0.05).
+     There is no association between education level and overweight status. Education does not appear to influence the likelihood of being overweight in this sample.
+     The table shows overweight is present is both education groups, with 99.9% overweight having less than a bachelor and 100% overweight with a bachelor or higher. 
+     After conducting a chi-square test, χ² was found to be 1.272, degrees of freedom was 1, and p-value was 0.259. With p ≥ 0.05, the association between education level and overweight status is not statistically significant. The Chi-square test was chosen because it helps test whether two categorical variables are independent, which matches the question of whether overweight status is dependent on education level.
+
+
 
