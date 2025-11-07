@@ -1,6 +1,6 @@
 # HHA507 - Assignment 4: NHANES 2021-2023 Inferential Analytics Assignment
 
-This assignment uses data from National Health and Nutrition Examination Survey (NHANES) to perform basic inferential statistics using Python and R in Google Colab. The purpose is to explore relationships and differences in health metrics and demographic variables.
+This assignment uses data from National Health and Nutrition Examination Survey (NHANES) to perform basic inferential statistics using Python on Google Colab. Then trying to do the same in the language R. The purpose is to explore relationships and differences in health metrics and demographic variables.
 
 - NHANES Data: [NHANES 2021-2023](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Cycle=2021-2023)
 
@@ -53,6 +53,7 @@ After conducting the pearson correlation, r was found to be 0.156 and p < 0.001.
      There is no association between education level and overweight status. Education does not appear to influence the likelihood of being overweight in this sample.
      The table shows overweight is present is both education groups, with 99.9% overweight having less than a bachelor and 100% overweight with a bachelor or higher. 
      After conducting a chi-square test, χ² was found to be 1.272, degrees of freedom was 1, and p-value was 0.259. With p ≥ 0.05, the association between education level and overweight status is not statistically significant. The Chi-square test was chosen because it helps test whether two categorical variables are independent, which matches the question of whether overweight status is dependent on education level.
+
 
 
 
