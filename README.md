@@ -39,13 +39,13 @@ NHANES variables for analysis:
      - Variables: `RIDAGEYR` (age), `DMDMARTZ` (marital status, recoded), and `BPXOSY3` (systolic blood pressure).**
        \
      Both age and marital status significantly affect systolic blood pressure, with age having a larger impact.
-     The Regression Results 
+     The Regression Results shows a total of 5,838 individuals. With the coef of age being 0.3952 and p < 0.0.001, each year of age increases systolic blood pressure by 0.395 mmHg on average. As age increases, so does systolic blood pressure. While the coef of married is -1.342 and p = 0.003, meaning being married lowers systolic blood pressure by 1.342 mmHg compared to not married. Additionally, with R² being 0.134, age and marital status together explain about 13.4% of the variation in systolic blood pressure. The model is statistically significant as f = 453.3 and p < 0.001.
 
 **4. "Is there a correlation between self-reported weight and minutes of sedentary behavior?"  
      - Variables: `WHD020` (self-reported weight, cleaned) and `PAD680` (sedentary behavior time, cleaned).**
        \
-There is a correlation between self-reported weight and minutes of sedentary behavior (p < 0.05).
-Correlation strength: weak
+There is a correlation between self-reported weight and minutes of sedentary behavior.
+After conducting the pearson correlation, r was found to be 0.156 and p < 0.001. This shows the correlation is statistically significant, but the strength is weak. There is a small positive association between weight and sedentary behavior, with weight increasing slightly as sedentary behavior increases.
 
 **5. "Is there an association between education level and being overweight?"
      - Variables: DMDEDUC2  (education level) and WHD020 (self-reported weight, cleaned).**
@@ -53,6 +53,7 @@ Correlation strength: weak
      There is no association between education level and overweight status. Education does not appear to influence the likelihood of being overweight in this sample.
      The table shows overweight is present is both education groups, with 99.9% overweight having less than a bachelor and 100% overweight with a bachelor or higher. 
      After conducting a chi-square test, χ² was found to be 1.272, degrees of freedom was 1, and p-value was 0.259. With p ≥ 0.05, the association between education level and overweight status is not statistically significant. The Chi-square test was chosen because it helps test whether two categorical variables are independent, which matches the question of whether overweight status is dependent on education level.
+
 
 
 
